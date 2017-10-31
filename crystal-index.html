@@ -50,7 +50,7 @@ function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 console.log("RandomInt");
-var targetNumber = getRandomInt (1,5); //TODO
+var targetNumber = getRandomInt (18,120); //TODO
 
 
 
@@ -70,6 +70,7 @@ var crystal4 = getRandomInt(1,12);
 
 var numberOptions = [crystal1, crystal2, crystal3, crystal4];
 
+
 // Next we create a for loop to create crystals for every numberOption.
 for (var i = 0; i < numberOptions.length; i++) {
 
@@ -81,7 +82,7 @@ for (var i = 0; i < numberOptions.length; i++) {
   imageCrystal.addClass("crystal-image");
 
   // Each imageCrystal will be given a src link to the crystal image
-  imageCrystal.attr("src",  "http://cdn.playbuzz.com/cdn/35910209-2844-45c0-b099-f4d82878d54f/00261fda-4062-4096-81fd-8cf96b9034e8.jpg");
+  imageCrystal.attr("src", "./assets/images/crystal" + (i + 1) + ".jpg");
   imageCrystal.attr("id","crystal" + (i + 1));
 
 
@@ -142,12 +143,12 @@ counter = 0;
 $("#total-score").text(counter);
 
 
-var crystal1 = 1; //getRandomInt(1,12);
+var crystal1 = getRandomInt(1,12);
 var crystal2 = getRandomInt(1,12);
 var crystal3 = getRandomInt(1,12);
 var crystal4 = getRandomInt(1,12);
 
-targetNumber = getRandomInt (1,5);
+targetNumber = getRandomInt (18,120);
 $("#number-to-guess").text(targetNumber);
 
 console.log("new game target num: " + targetNumber);
