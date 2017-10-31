@@ -69,7 +69,7 @@ $(".crystal-image").on("click", function() {
   console.log("counter " + counter);
   // All of the same game win-lose logic applies. So the rest remains unchanged.
 
-  $("#total-score").text(counter);
+  $("#total-score").text("Your current score is: " + counter);
 
   if (counter === targetNumber) {
     wins++;
@@ -94,7 +94,7 @@ function startNewGame ()
 {
 console.log("in new function");
 counter = 0;
-$("#total-score").text(counter);
+$("#total-score").text("Your current score is: " + counter);
 
 
 var crystal1 = getRandomInt(1,12);
