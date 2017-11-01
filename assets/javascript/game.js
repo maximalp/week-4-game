@@ -46,6 +46,7 @@ for (var i = 0; i < numberOptions.length; i++) {
 
   imageCrystal.attr("height", "100");
   imageCrystal.attr("width", "100");
+  //imageCrystal.attr("margin-left", "200");
 
   // Lastly, each crystal image (with all it classes and attributes) will get added to the page.
   $("#crystals").append(imageCrystal);
@@ -95,6 +96,7 @@ function startNewGame ()
 console.log("in new function");
 counter = 0;
 $("#total-score").text("Your current score is: " + counter);
+// $("total-score-head").attr("<div>
 
 
 var crystal1 = getRandomInt(1,12);

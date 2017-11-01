@@ -1,18 +1,41 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Max's Crystal </title>
+  <title>Max's Crystal Collector Challenge </title>
 
-<!-- link to the jQuery library -->
+<!-- link to jQuery library -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- CSS style sheets / nonbootstrap -->
+<link rel="stylesheet" href="./assets/css/reset.css">
+<link rel="stylesheet" href="./assets/css/styles.css">
+
+<!-- Font -->
+<link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
 
 </head>
-<body>
+<body id="bodystyle">
 
-<h1>Number to Guess: <span id="number-to-guess"></span></h1>
+<h1 id="header">Crystal Collector Challenge</h2>
 
+<div id="introtext">
+  <p class="introp">You will be given a random number at the start of the game. </p>
 
+  <p class="introp">There will be four crystals below. By clicking on a crystal you will add specific amount of points to your total score.</p>
+
+  <p class="introp">You win the game by matching your total score to a random number, you lose the game if your total score goes above the random number. </p>
+
+  <p class="introp">The value of each crystal is hidden from you until you click on it. </p>
+
+  <p class="introp">Each time the game starts, the value of each crystal will change. </p>
+
+</div>
+
+<div id="numguess">
+<p id="spanhead">Number to Guess: <br><br><span id="number-to-guess"></span></p>
+</div>
 
 <!-- Note that this div is now empty. We will fill it dynamically -->
 <div id="crystals">
@@ -20,8 +43,6 @@
 
 
 <div id="total-score-head">
-
-
 
     <div id="total-score">
     </div>
